@@ -1,0 +1,246 @@
+backend:
+  name: github
+  repo: Tayyabali-analyst/portfolio
+  branch: admin-cms-feature
+  auth_type: implicit
+  base_url: https://lustrous-salamander-01489b.netlify.app
+  auth_endpoint: auth
+  site_domain: lustrous-salamander-01489b.netlify.app
+media_folder: assets/uploads
+public_folder: /assets/uploads
+site_url: /
+display_url: /
+logo_url: /assets/profile.webp
+
+collections:
+  - name: portfolio
+    label: Portfolio content
+    files:
+      - name: data
+        label: Site content
+        file: content/data.json
+        format: json
+        fields:
+          - label: Site settings
+            name: site
+            widget: object
+            fields:
+              - { label: Browser title, name: title, widget: string }
+              - { label: Meta description, name: description, widget: text }
+              - { label: Brand initials, name: brandInitials, widget: string }
+              - { label: Brand name, name: brandName, widget: string }
+              - label: Navigation links
+                name: nav
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Link, name: href, widget: string }
+              - { label: Contact button label, name: navCta, widget: string }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading line 1, name: title, widget: string }
+              - { label: Heading emphasis, name: titleEmphasis, widget: string }
+              - { label: Intro, name: intro, widget: text }
+              - { label: Work button, name: workButton, widget: string }
+              - { label: CV label, name: cvLabel, widget: string }
+              - {
+                  label: CV file or URL,
+                  name: cvUrl,
+                  widget: file,
+                  media_folder: /assets/uploads,
+                }
+              - {
+                  label: Profile image,
+                  name: profileImage,
+                  widget: image,
+                  media_folder: /assets/uploads,
+                }
+              - {
+                  label: Profile image alt text,
+                  name: profileAlt,
+                  widget: string,
+                }
+              - { label: Portrait label, name: portraitLabel, widget: text }
+              - { label: Note number, name: noteNumber, widget: string }
+              - { label: Note, name: note, widget: text }
+          - label: About
+            name: about
+            widget: object
+            fields:
+              - { label: Section number, name: number, widget: string }
+              - { label: Section label, name: label, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - {
+                  label: Heading emphasis,
+                  name: headingEmphasis,
+                  widget: string,
+                }
+              - { label: Lead paragraph, name: lead, widget: text }
+              - { label: Body paragraph, name: body, widget: text }
+              - label: Facts
+                name: facts
+                widget: list
+                fields:
+                  - { label: Value, name: value, widget: string }
+                  - { label: Label, name: label, widget: string }
+          - label: Projects section
+            name: projectsSection
+            widget: object
+            fields:
+              - { label: Section number, name: number, widget: string }
+              - { label: Section label, name: label, widget: string }
+              - { label: Intro, name: intro, widget: string }
+          - label: Projects
+            name: projects
+            widget: list
+            fields:
+              - { label: Number, name: number, widget: string }
+              - { label: Type, name: type, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Title emphasis, name: titleEmphasis, widget: string }
+              - { label: Description, name: description, widget: text }
+              - {
+                  label: Tags,
+                  name: tags,
+                  widget: list,
+                  field: { label: Tag, name: tag, widget: string },
+                }
+              - { label: Statistic, name: stat, widget: string }
+              - { label: Statistic label, name: statLabel, widget: text }
+              - {
+                  label: Project link,
+                  name: link,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Project image,
+                  name: image,
+                  widget: image,
+                  required: false,
+                  media_folder: /assets/uploads,
+                }
+          - label: Skills section
+            name: skillsSection
+            widget: object
+            fields:
+              - { label: Section number, name: number, widget: string }
+              - { label: Section label, name: label, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - {
+                  label: Heading emphasis,
+                  name: headingEmphasis,
+                  widget: string,
+                }
+              - { label: Also exploring label, name: alsoLabel, widget: string }
+              - { label: Also exploring text, name: alsoText, widget: text }
+          - label: Skills
+            name: skills
+            widget: list
+            fields:
+              - { label: Number, name: number, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Details, name: details, widget: text }
+              - {
+                  label: Icon,
+                  name: icon,
+                  widget: image,
+                  required: false,
+                  media_folder: /assets/uploads,
+                }
+          - label: Journey section
+            name: journeySection
+            widget: object
+            fields:
+              - { label: Section number, name: number, widget: string }
+              - { label: Section label, name: label, widget: string }
+              - { label: Intro, name: intro, widget: string }
+          - label: Journey entries
+            name: journey
+            widget: list
+            fields:
+              - { label: Date, name: date, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Organization, name: organization, widget: string }
+              - { label: Description, name: description, widget: text }
+          - {
+              label: Credentials summary,
+              name: credentialsSummary,
+              widget: text,
+            }
+          - label: Certificates section
+            name: certificatesSection
+            widget: object
+            fields:
+              - { label: Section number, name: number, widget: string }
+              - { label: Section label, name: label, widget: string }
+              - { label: Intro, name: intro, widget: string }
+              - { label: Note, name: note, widget: string }
+          - label: Certificates
+            name: certificates
+            widget: list
+            fields:
+              - { label: Icon text, name: icon, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Issuer, name: issuer, widget: string }
+              - { label: Date, name: date, widget: string, required: false }
+              - {
+                  label: Certificate file,
+                  name: file,
+                  widget: file,
+                  media_folder: /assets/uploads,
+                }
+          - label: Visitor section
+            name: visitorsSection
+            widget: object
+            fields:
+              - { label: Section number, name: number, widget: string }
+              - { label: Section label, name: label, widget: string }
+              - { label: Intro, name: intro, widget: string }
+              - { label: Empty state, name: empty, widget: string }
+              - { label: List caption, name: caption, widget: string }
+              - { label: Count label, name: countLabel, widget: string }
+              - { label: Note, name: note, widget: string }
+          - label: Contact
+            name: contact
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - {
+                  label: Heading emphasis,
+                  name: headingEmphasis,
+                  widget: string,
+                }
+              - { label: Email, name: email, widget: string }
+              - { label: Location, name: location, widget: string }
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: URL, name: url, widget: string }
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - { label: Copyright, name: copyright, widget: string }
+              - { label: Tagline, name: tagline, widget: string }
+          - label: Welcome dialog
+            name: welcome
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - {
+                  label: Heading emphasis,
+                  name: headingEmphasis,
+                  widget: string,
+                }
+              - { label: Description, name: description, widget: string }
+              - { label: Input label, name: label, widget: string }
+              - { label: Input placeholder, name: placeholder, widget: string }
+              - { label: Button label, name: button, widget: string }

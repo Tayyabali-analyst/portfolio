@@ -1,0 +1,47 @@
+TAYYAB ALI
+Data Analyst | Python, SQL, Excel, Power BI
+Bhimber, Azad Kashmir | Open to Remote
+
+CONTACT
+Email: tayyabali1676125@gmail.com
+Phone: +92 348 5294815
+GitHub: https://github.com/Tayyabali-analyst
+LinkedIn: https://linkedin.com/in/tayyab-ali-analyst
+
+PROFILE
+Computer Science undergraduate (5th semester, University of Gujrat) with hands-on data analysis experience from a BI internship at Zameen.com and end-to-end projects using Python, SQL, Excel, and Power BI.
+
+SKILLS
+SQL (T-SQL), Python (pandas), Excel (PivotTables), Power BI (DAX, Power Query), Data Cleaning, RFM Segmentation, Cohort Analysis, Data Visualization, Reporting and Dashboards.
+
+EXPERIENCE
+Data & BI Intern | Zameen.com | Jul 2026 - Sep 2026
+- Supported the Business Intelligence team with data entry, cleaning, and organization of property listing records.
+- Applied SQL queries and analytical thinking to review and structure business data for reporting.
+- Assisted in maintaining accuracy and consistency across large datasets.
+
+Home Tutor | Private Tuition | Ongoing
+- Delivered one-on-one instruction and tracked progress to improve outcomes.
+
+PROJECTS
+Olist E-commerce Analytics | Python, SQL, Excel, Power BI
+- Cleaned and merged 6 raw datasets using pandas.
+- Built an RFM customer segmentation model across 94,721 customers.
+- Surfaced $14.14M in revenue across 97,917 orders and identified a 46.5% At-Risk segment.
+
+Retail Sales Analysis | SQL Server, Excel
+- Analysed 1,000 retail transactions to answer 8 business questions.
+- Identified Gen Z as the highest average-order-value segment and seasonal revenue swings.
+
+EDUCATION
+BS Computer Science - University of Gujrat (In Progress, 5th Semester)
+BA - Allama Iqbal Open University (In Progress)
+FSc Pre-Engineering - Completed
+
+CERTIFICATIONS
+HackerRank SQL Basic, Intermediate and Advanced (2026)
+Google Certified Educator Level 1 (2026)
+Introduction to SQL & Power BI for Beginners - Simplilearn SkillUP
+AI Using Python & SEO - DigiSkills/Ignite
+Prompt Engineering for AI Applications - Alison
+Claude 101 and AI Fluency - Anthropic
