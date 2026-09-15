@@ -3,7 +3,7 @@ backend:
   repo: Tayyabali-analyst/portfolio
   branch: admin-cms-feature
   auth_type: implicit
-  base_url: https://api.netlify.com
+  base_url: https://lustrous-salamander-01489b.netlify.app
   auth_endpoint: auth
 
 media_folder: assets/uploads
