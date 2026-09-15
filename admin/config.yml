@@ -5,7 +5,7 @@ backend:
   auth_type: implicit
   base_url: https://lustrous-salamander-01489b.netlify.app
   auth_endpoint: auth
-  site_domain: lustrous-salamander-01489b.netlify.app
+site_domain: lustrous-salamander-01489b.netlify.app
 media_folder: assets/uploads
 public_folder: /assets/uploads
 site_url: /
